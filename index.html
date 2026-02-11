@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Edson Damasceno | Data Scientist</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: #0f172a;
+    color: white;
+}
+
+/* ===== HERO ===== */
+header {
+    height: 100vh;
+    background: url("banner.png") center/cover no-repeat;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+header::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.75), rgba(15,23,42,0.95));
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    max-width: 800px;
+}
+
+h1 {
+    font-size: 52px;
+    font-weight: 700;
+}
+
+.subtitle {
+    font-size: 20px;
+    margin: 20px 0;
+    color: #cbd5e1;
+}
+
+.cta-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 28px;
+    background: #38bdf8;
+    border-radius: 30px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #0f172a;
+    transition: 0.3s;
+}
+
+.cta-btn:hover {
+    transform: scale(1.05);
+}
+
+/* ===== SEÇÕES ===== */
+section {
+    padding: 80px 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.section-title {
+    font-size: 32px;
+    margin-bottom: 40px;
+    border-left: 4px solid #38bdf8;
+    padding-left: 10px;
+}
+
+/* ===== CARDS ===== */
+.card {
+    background: #1e293b;
+    padding: 25px;
+    margin: 20px 0;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+}
+
+a {
+    color: #38bdf8;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* ===== SKILLS ===== */
+.skill {
+    margin-bottom: 25px;
+}
+
+.skill-name {
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.skill-bar {
+    width: 100%;
+    height: 10px;
+    background: #334155;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.skill-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #38bdf8, #6366f1);
+    width: 0;
+    border-radius: 20px;
+    animation: fillBar 2s forwards;
+}
+
+@keyframes fillBar {
+    from { width: 0; }
+}
+
+/* ===== FOOTER ===== */
+.footer {
+    text-align: center;
+    padding: 40px;
+    background: #020617;
+}
+
+/* ===== RESPONSIVO ===== */
+@media(max-width: 768px) {
+    h1 { font-size: 36px; }
+    .subtitle { font-size: 18px; }
+}
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<header>
+    <div class="hero-content">
+        <h1>Edson Damasceno</h1>
+        <p class="subtitle">
+            Cientista de Dados focado em Machine Learning, Deep Learning, Visão Computacional e Análise Avançada de Dados.
+        </p>
+        <a href="#contato" class="cta-btn">Vamos Conversar</a>
+    </div>
+</header>
+
+<!-- SOBRE -->
+<section>
+    <h2 class="section-title">Sobre Mim</h2>
+    <p>
+        Sou Profissional com sólida formação acadêmica e experiência em Machine Learning, Deep Learning e Visão Computacional, atuando também fortemente em análise exploratória, modelagem estatística e geração de insights estratégicos para suporte à tomada de decisão. Tenho experiência em analise de dados, desenvolvendo projetos ponta a ponta, desde a coleta, limpeza e transformação de dados até a construção, validação e implantação de modelos preditivos. Atuo com análise de grandes volumes de dados, criação de dashboards, identificação de padrões e métricas de performance, sempre com foco em gerar impacto real no negócio. Participei de projetos envolvendo CNNs customizadas, otimização de hiperparâmetros, seleção de atributos com algoritmos evolutivos e aplicações em imagens médicas. Sou movido por desafios técnicos e aprendizado contínuo, aplicando Inteligência Artificial e técnicas de análise de dados — como EDA, modelagem estatística, regressão, clusterização e Machine Learning — para resolver problemas analíticos e gerar insights estratégicos que apoiam a tomada de decisão.
+    </p>
+</section>
+
+<!-- EDUCAÇÃO -->
+<section>
+    <h2 class="section-title">Educação</h2>
+
+    <div class="card">
+        <h3>Universidade Federal do Piauí</h3>
+        <p><strong>Mestrado em Engenharia Elétrica</strong></p>
+        <p>Fevereiro 2020 - Setembro 2022</p>
+        <p>Teresina - Piauí - Brasil</p>
+        <p><em>Análise de Dados, Machine Learning e Deep Learning</em></p>
+    </div>
+
+    <div class="card">
+        <h3>Universidade Federal do Piauí</h3>
+        <p><strong>Bacharelado em Sistemas de Informação</strong></p>
+        <p>Fevereiro 2014 - Dezembro 2017</p>
+        <p>Picos - Piauí - Brasil</p>
+        <p><em>Análise de Sistemas, Bancos de Dados e Programação</em></p>
+    </div>
+
+</section>
+
+
+<!-- SKILLS -->
+<section>
+    <h2 class="section-title">Skills Técnicas</h2>
+
+    <div class="skill">
+        <div class="skill-name">Python & Data Science</div>
+        <div class="skill-bar">
+            <div class="skill-fill" style="width: 95%;"></div>
+        </div>
+    </div>
+
+    <div class="skill">
+        <div class="skill-name">Machine Learning</div>
+        <div class="skill-bar">
+            <div class="skill-fill" style="width: 90%;"></div>
+        </div>
+    </div>
+
+    <div class="skill">
+        <div class="skill-name">Deep Learning (CNN, U-Net, SegNet)</div>
+        <div class="skill-bar">
+            <div class="skill-fill" style="width: 85%;"></div>
+        </div>
+    </div>
+
+    <div class="skill">
+        <div class="skill-name">Estatística & Modelagem</div>
+        <div class="skill-bar">
+            <div class="skill-fill" style="width: 88%;"></div>
+        </div>
+    </div>
+
+    <div class="skill">
+        <div class="skill-name">Power BI / Visualização</div>
+        <div class="skill-bar">
+            <div class="skill-fill" style="width: 80%;"></div>
+        </div>
+    </div>
+
+</section>
+
+<!-- IMPACTO -->
+<section>
+    <h2 class="section-title">Impacto & Resultados</h2>
+
+    <div class="card">
+        📈 Modelos preditivos com acurácia superior a 90% em problemas de classificação médica.
+    </div>
+
+    <div class="card">
+        🧠 Desenvolvimento de arquiteturas Deep Learning aplicadas à segmentação tumoral.
+    </div>
+
+    <div class="card">
+        📊 Construção de dashboards estratégicos para suporte à tomada de decisão.
+    </div>
+
+</section>
+
+<!-- PROJETOS -->
+<section>
+    <h2 class="section-title">Projetos</h2>
+
+    <div class="card">
+        🧠 Breast Cancer Diagnosis – Machine Learning aplicado à saúde.
+        <a href="https://github.com/edsondamasceno/Breast-cancer-diagnosis" target="_blank">
+            Ver Projeto
+        </a>
+    </div>
+
+    <div class="card">
+        🔬 DCE-MRI Segmentation – Deep Learning (U-Net).
+        <a href="https://github.com/edsondamasceno/DCE-MRI-Segmentation" target="_blank">
+            Ver Projeto
+        </a>
+    </div>
+
+    <div class="card">
+        📊 Data Analysis – Modelagem estatística aplicada.
+        <a href="https://github.com/edsondamasceno/Data-Analysis" target="_blank">
+            Ver Projeto
+        </a>
+    </div>
+
+    <div class="card">
+        📈 Dashboard de Faturamento – Dashboard interativo para análise de KPIs.
+        <a href="https://github.com/edsondamasceno/dashboard-faturamento" target="_blank">
+            Ver Projeto
+        </a>
+    </div>
+</section>
+
+<!-- CONTATO -->
+<section>
+<!-- ATIVIDADES E INTERESSES -->
+<section>
+    <h2 class="section-title">Atividades & Interesses</h2>
+
+    <div class="card">📊 Data Analysis</div>
+    <div class="card">🧠 Data Science</div>
+    <div class="card">📈 Data Visualization</div>
+    <div class="card">🤖 Machine Learning</div>
+    <div class="card">🧬 Deep Learning</div>
+    <div class="card">👁 Computer Vision</div>
+
+</section>
+
+
+<!-- CONTATO -->
+<section id="contato">
+    <h2 class="section-title">Contato</h2>
+    <p>Email: edsondamasceno11@gmail.com</p>
+    <p>
+    <a href="https://github.com/edsondamasceno" target="_blank">
+        GitHub
+    </a>
+    <p> </p>
+    <a href="https://www.linkedin.com/in/édson-damasceno-29055716b" target="_blank">
+        LinkedIn
+    </a>
+    </p>
+</section>
+
+<div class="footer">
+    © 2026 Edson Damasceno | Data Scientist
+</div>
+
+</body>
+</html>
